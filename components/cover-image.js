@@ -9,7 +9,7 @@ export default function CoverImage({ title, url, slug }) {
       height={1000}
       alt={`Cover Image for ${title}`}
       className={cn('shadow-small', {
-        'hover:shadow-medium transition-shadow duration-200': slug,
+        'hover:shadow-medium transition-shadow duration-200 ': slug,
       })}
       src={imageBuilder.image(url).height(1000).width(2000).url()}
     />
@@ -22,8 +22,8 @@ export default function CoverImage({ title, url, slug }) {
           <a aria-label={title}>{image}</a>
         </Link>
       ) : (
-        image
-      )}
+          image
+        )}
     </div>
   )
 }
