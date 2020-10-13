@@ -5,13 +5,13 @@ import { imageBuilder } from '../lib/sanity'
 export default function CoverImage({ title, url, slug }) {
   const image = (
     <img
-      width={2000}
-      height={1000}
+      // width={2000}
+      // height={1000}
       alt={`Cover Image for ${title}`}
-      className={cn('shadow-small', {
+      className={cn('shadow-small my-auto w-full', {
         'hover:shadow-medium transition-shadow duration-200 ': slug,
       })}
-      src={imageBuilder.image(url).height(1000).width(2000).url()}
+      src={imageBuilder.image(url).url()}
     />
   )
 
