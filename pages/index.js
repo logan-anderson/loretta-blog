@@ -14,7 +14,7 @@ export default function Index({ allPosts, preview }) {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Loretta Anderson's Blog</title>
+          <title>Mrs A Teaches</title>
         </Head>
         <Container>
           <Intro />

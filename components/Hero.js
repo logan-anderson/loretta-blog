@@ -1,4 +1,8 @@
+import { useRouter } from "next/router"
+
 export const Hero = () => {
+    const IMG_URL = "/img/Anderson-0036_Cropped.jpg"
+    const router = useRouter()
 
     return (
         <section className="overflow-hidden">
@@ -21,7 +25,7 @@ export const Hero = () => {
                 </svg>
                 <div className="relative lg:flex lg:items-center">
                     <div className="hidden lg:block lg:flex-shrink-0">
-                        <img className="h-64 w-64 rounded-full xl:h-80 xl:w-80" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                        <img className="h-64 w-64 rounded-full xl:h-80 xl:w-80" src={IMG_URL} alt="" />
                     </div>
                     <div className="relative lg:ml-10">
                         <svg className="absolute top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-blue-300 opacity-50" stroke="currentColor" fill="none" viewBox="0 0 144 144">
@@ -30,17 +34,22 @@ export const Hero = () => {
                         <blockquote className="relative">
                             <div className="text-2xl leading-9 font-medium text-gray-900">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.
+                                    Hi! I'm Loretta Anderson and I teach first and second grade at Immanuel Christian School in Prince Edward Island, Canada.  I'm relatively new to teaching PBL but I am loving it and want to share my PBL journey with you
               </p>
                             </div>
                             <footer className="mt-8">
                                 <div className="flex">
                                     <div className="flex-shrink-0 lg:hidden">
-                                        <img className="h-12 w-12 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                                        <img className="h-12 w-12 rounded-full" src={IMG_URL} alt="" />
                                     </div>
                                     <div className="ml-4 lg:ml-0">
-                                        <div className="text-base leading-6 font-medium text-gray-900">Judith Black</div>
-                                        <div className="text-base leading-6 font-medium text-indigo-600">CEO, Tuple</div>
+                                        <span class="inline-flex rounded-md shadow-sm">
+                                            <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:border-blue-800 focus:shadow-outline-indigo active:bg-blue-800 transition ease-in-out duration-150" onClick={() => {
+                                                router.push('/about')
+                                            }}>
+                                                More about Loretta
+                                            </button>
+                                        </span>
                                     </div>
                                 </div>
                             </footer>
