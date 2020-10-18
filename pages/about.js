@@ -1,12 +1,10 @@
 import Container from '../components/container'
-import PostBody from '../components/post-body'
 import Header from '../components/header'
-import SectionSeparator from '../components/section-separator'
 import Layout from '../components/layout'
 
 
 export default function About() {
-    const content = "I was born and raised in the small province of Canada, in little old PEI.  After getting my BA at University of Prince Edward Island in 1994, I moved to Windsor, ON where I attended the University of Windsor to obtain my Bachelor of Education in Primary/Junior Education.  I officially started my teaching career in 2002 when I finally got my own classroom of kindergarten students at Immanuel Christian School.  Four years later, I moved up to first and second grade.  I am now in my 19th year of teaching at Immanuel.  Also during these years, I got married in 1995 and my husband and I have two children, a son and a daughter who are now both in college!  When I'm not planning my next PBL unit, I love taking photographs, hiking, biking, reading and enjoying a great cup of tea or coffee."
+    const content = "I was born and raised in the smallest province of Canada, in little old PEI.  After getting my BA at University of Prince Edward Island in 1994, I moved to Windsor, ON where I attended the University of Windsor to obtain my Bachelor of Education in Primary/Junior Education.  I officially started my teaching career in 2002 when I finally got my own classroom of kindergarten students at Immanuel Christian School.  Four years later, I moved up to first and second grade.  I am now in my 19th year of teaching at Immanuel.  Also during these years, I got married in 1995 and my husband and I have two children, a son and a daughter who are now both in college!  When I'm not planning my next PBL unit, I love taking photographs, hiking, biking, reading and enjoying a great cup of tea or coffee."
     return (
         <Layout preview={false}>
             <Container>

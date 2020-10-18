@@ -34,7 +34,7 @@ export const Hero = () => {
                         <blockquote className="relative">
                             <div className="text-2xl leading-9 font-medium text-gray-900">
                                 <p>
-                                    Hi! I'm Loretta Anderson and I teach first and second grade at Immanuel Christian School in Prince Edward Island, Canada.  I'm relatively new to teaching PBL but I am loving it and want to share my PBL journey with you
+                                    Hi! I'm Loretta Anderson and I teach first and second grade at Immanuel Christian School in Prince Edward Island, Canada.  I'm relatively new to teaching PBL but I am loving it and want to share my PBL journey with you.
               </p>
                             </div>
                             <footer className="mt-8">
