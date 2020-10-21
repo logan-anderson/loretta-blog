@@ -25,12 +25,15 @@ export default function Post({ post, morePosts, preview }) {
           <PostTitle>Loading…</PostTitle>
         ) : (
             <>
-              <article className="bg-white m-5 rounded-md">
+              <article className="bg-white rounded-md">
                 <Head>
                   <title>
-                    {post.title} | Mrs A Teaches{CMS_NAME}
+                    {post.title} | Mrs A Teaches
                   </title>
-                  {/* <meta property="og:image" content={post.ogImage.url} /> */}
+                  {
+                    post.ogImage &&
+                    < meta property="og:image" content={post.ogImage.url} />
+                  }
                 </Head>
                 <PostHeader
                   title={post.title}

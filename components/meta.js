@@ -34,9 +34,9 @@ export default function Meta() {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
+        content="A blog written for elementary school teachers about PBL ( project based learning ).  Loretta Anderson is sharing her journey with pbl  ( project based learning ) in her first and second grade classroom. This is a great place to learn some tips and practical ideas for teaching pbl in an elementary classroom."
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <meta property="og:image" content='/img/Anderson-0036_Cropped.jpg' />
     </Head>
   )
 }
