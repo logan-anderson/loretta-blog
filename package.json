@@ -12,6 +12,7 @@
     "@sanity/image-url": "0.140.17",
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
+    "gsap": "^3.5.1",
     "next": "latest",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
