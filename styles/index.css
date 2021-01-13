@@ -4,6 +4,14 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
+ol {
+    @apply list-decimal ml-5
+}
+
+ul {
+    @apply list-disc ml-5
+}
+
 h1 {
     @apply text-3xl;
 }
